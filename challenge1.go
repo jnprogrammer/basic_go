@@ -1,7 +1,7 @@
 package main
 
 import (
-	'fmt'
+	"fmt"
 )
 
 var x int
@@ -11,5 +11,8 @@ func main() {
 	x = 42
 	y = true
 	z := "James Bond?"
-	fmt.Println(x, y , z)
+	fmt.Println(x, y, z)
+	fmt.Printf("%T\n", z)
+	fmt.Printf("%T\n", x)
+	fmt.Printf("%T\n", y)
 }
