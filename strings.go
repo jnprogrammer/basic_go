@@ -22,4 +22,9 @@ func main() {
 	for i := 0; i < len(rawstring); i++ {
 		fmt.Printf("%#U\n", rawstring[i])
 	}
+
+	for i, v := range s {
+		//fmt.Println(i ,v)
+		fmt.Printf("%d -- %#x \n", i, v)
+	}
 }
