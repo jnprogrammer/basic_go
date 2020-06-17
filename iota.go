@@ -29,7 +29,7 @@ const (
 	a = iota
 	b
 	c
-	e = iota
+	e
 	f
 	g
 )
