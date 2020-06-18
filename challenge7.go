@@ -21,5 +21,7 @@ func main() {
 	number = number >> 2
 	fmt.Print("Number was bitshifted >> 2\n")
 	fmt.Printf("Hex %X \nBinary %b \nDecimal %v\n", number, number, number)
+	number2 := number * 2
+	fmt.Printf("Hex %X \nBinary %b \nDecimal %v\n", number2, number2, number2)
 
 }
