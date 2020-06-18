@@ -7,5 +7,11 @@ import (
 )
 
 func main() {
-	fmt.Print(`"Normally this do \tabs and other %t \nstuff but not today !!"`)
+	fmt.Print(`"Normally this do \tabs and other %t \nstuff but not today !!
+
+ds See how it keeps the returns in the string ??!/
+
+
+
+cool huh ?\t"`)
 }
