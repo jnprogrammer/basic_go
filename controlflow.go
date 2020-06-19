@@ -8,4 +8,8 @@ func main() {
 		fmt.Println(i)
 		i++
 	}
+	//   init ; condition; execute after 1 trip of the for loop
+	for x := 0; x <= 420; x++ {
+		fmt.Println(x)
+	}
 }
