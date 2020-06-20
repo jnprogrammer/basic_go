@@ -9,7 +9,7 @@ func main() {
 		fmt.Print(x)
 		if x == 8 {
 			fmt.Print("\n8 Ball broke the for loop")
-			break
+			break //stops the forloop its within and go to the next block
 		}
 		x++
 	}
