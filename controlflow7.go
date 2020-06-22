@@ -16,7 +16,7 @@ func main() {
 		fmt.Print("Won't print")
 	case (2 == 4):
 		fmt.Println("also won't print")
-	case true:
+	case (5 > 4):
 		fmt.Println("PRints")
 		fallthrough
 	case false:
