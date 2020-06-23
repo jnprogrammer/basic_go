@@ -15,4 +15,13 @@ func main() {
 	for key, val := range m {
 		fmt.Println(key, val)
 	}
+
+	// adding a record
+
+	m["Avatar"] = 5
+
+	for key, val := range m {
+		fmt.Println(key, val)
+	}
+
 }
