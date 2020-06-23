@@ -6,7 +6,7 @@ import "fmt"
 
 func main() {
 	//x := []int{4, 6, 7, 8, 45}
-	// type, inital slice length,  max capacity of the slice (you can't append beyond this number)
+	// type, initial slice length,  max capacity of the slice (you can't append beyond this number)
 	y := make([]int, 10, 101)
 	y[0] = 32
 	y[9] = 420
