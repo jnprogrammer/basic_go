@@ -17,3 +17,6 @@ func main() {
 
 	fmt.Println(dude)
 }
+
+//In Go, we create VALUES of a certain TYPE that are stored in VARIABLES
+//and those VARIABLES have IDENTIFIERS
