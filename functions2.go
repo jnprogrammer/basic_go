@@ -18,11 +18,13 @@ func foo(x ...int) {
 
 func sum(x ...int) {
 	var number int
+	args := 0
 	for i, v := range x {
 		number += v
 		fmt.Println("This is i", i)
+		args++
 	}
-	fmt.Println("i , number", number)
+	fmt.Println("The Sum of arguments", number, "There are", args, "Arguments")
 }
 
 // func (r receiver) identifier(parameters(s)) (return(s)) { code }
