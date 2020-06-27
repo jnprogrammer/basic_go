@@ -30,6 +30,7 @@ func main() {
 	}
 
 	fmt.Println(Kel)
+	// the speak method is now avaible to all VALUES of TYPE alladude
 	Kel.speak()
 	Ken.speak()
 }
