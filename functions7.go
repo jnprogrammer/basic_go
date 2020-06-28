@@ -69,5 +69,5 @@ func (s electrictruck) honk() {
 // A VALUE can be of more than one TYPE
 
 func show(e ecars) {
-	fmt.Println("I was passed into show", e)
+	fmt.Println("I was passed to show", e)
 }
