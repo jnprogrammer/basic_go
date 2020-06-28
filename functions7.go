@@ -12,7 +12,6 @@ type electricvechical struct {
 	chargenetworkaccess bool
 	drivetrain          string
 	topspeedkm          int
-	autopilot           bool
 }
 
 type electrictruck struct {
@@ -35,7 +34,6 @@ func main() {
 			chargenetworkaccess: true,
 			drivetrain:          "Tri Motor All-Wheel Drive",
 			topspeedkm:          120,
-			autopilot:           true,
 		},
 		towcap:          14000,
 		groundclearance: 16,
@@ -49,7 +47,6 @@ func main() {
 			chargenetworkaccess: true,
 			drivetrain:          "Single Motor Rear-Wheel Drive",
 			topspeedkm:          120,
-			autopilot:           true,
 		},
 		towcap:          7000,
 		groundclearance: 16,
