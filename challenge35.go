@@ -10,4 +10,5 @@ func main() {
 	}
 
 	afunction()
+	fmt.Printf("%T\n", afunction)
 }
