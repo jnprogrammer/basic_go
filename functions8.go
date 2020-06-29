@@ -2,20 +2,16 @@ package main
 
 import "fmt"
 
-// Anonymous func
-
 func main() {
-	foo()
+	f := func() {
+		fmt.Println(":My first func expression")
+	}
 
-	func() {
-		fmt.Println("This is an Anonymous function")
-	}()
+	f()
 
-	func(s string) {
-		fmt.Println("This anonymous function ran with:", s)
-	}("Anonymous call!")
-}
+	g := func(s int) {
+		fmt.Println(":My first number expression", s)
+	}
 
-func foo() {
-	fmt.Println("Foo ran")
+	g(412)
 }

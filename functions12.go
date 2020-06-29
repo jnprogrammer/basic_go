@@ -1,40 +1,26 @@
 package main
 
-import "fmt"
-
-var x int
+import (
+	"fmt"
+)
 
 func main() {
-	fmt.Println(x)
-	x++
-	fmt.Println(x)
-	{
-		x := 534
-		fmt.Println("This x is in a different scope:", x)
-	}
-	foo()
-	fmt.Println(x)
-
-	a := incrementor()
-	b := incrementor()
-
-	fmt.Println(a())
-	fmt.Println(a())
-	fmt.Println(a())
-	fmt.Println(b())
-	fmt.Println(b())
-	fmt.Println(b())
+	fmt.Println(4 * 3 * 2 * 1)
+	n := fact2(56)
+	fmt.Println(n)
 }
 
-func foo() {
-	fmt.Println("Scopre of x is the entire package")
-	x++
+func factorial(n int) int {
+	if n == 0 {
+		return 1
+	}
+	return n * factorial(n-1)
 }
 
-func incrementor() func() int {
-	var x int
-	return func() int {
-		x++
-		return x
+func fact2(number int) int {
+	total := 1
+	for ; number > 0; number-- {
+		total *= number
 	}
+	return total
 }
