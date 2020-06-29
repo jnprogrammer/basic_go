@@ -6,6 +6,15 @@ import (
 
 func main() {
 	fooclose(420)
+	fooclose(420)
+	fooclose(420)
+
+	fooclose(420)
+
+	fooclose(420)
+	fooclose(420)
+	fooclose(420)
+	fooclose(4203442)
 
 }
 
