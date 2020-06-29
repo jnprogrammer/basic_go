@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type shape interface {
 	area()
@@ -19,7 +21,7 @@ type square struct {
 func main() {
 	circle64 := circle{
 		r:  42.2,
-		pi: 3.14159265359,
+		pi: 3.14,
 	}
 
 	square94 := square{
