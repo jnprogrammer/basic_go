@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	f := fib(42)
+	f := fib(16)
 	fmt.Println(f)
 }
 
@@ -15,3 +15,5 @@ func fib(n int) int {
 		return fib(n-1) + fib(n-2)
 	}
 }
+
+//this is an example of recursion
