@@ -38,4 +38,16 @@ func main() {
 
 	fmt.Println(string(bs))
 
+	//unmarshal the data from the previous challenge
+	err = json.Unmarshal(bs, &rocks)
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	fmt.Println("All the data: ", rocks)
+
+	for i, v := range rocks {
+		fmt.Println("\n Rocks: ", i)
+		fmt.Println(v.Kind, v.Power)
+	}
 }
