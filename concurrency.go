@@ -14,16 +14,16 @@ func main() {
 	fmt.Println("ARCH:\t ", runtime.GOARCH)
 	fmt.Println("CPUs:\t ", runtime.NumCPU())
 	fmt.Println("Go routines:\t ", runtime.NumGoroutine())
-	fmt.Println("************************************")
+	fmt.Println("*****************************************")
 
 	wg.Add(1)
 	go foo()
 	bar()
 
-	fmt.Println("************************************")
+	fmt.Println("*****************************************")
 	fmt.Println("CPUs:\t ", runtime.NumCPU())
 	fmt.Println("Go routines:\t ", runtime.NumGoroutine())
-	fmt.Println("************************************")
+	fmt.Println("*****************************************")
 	wg.Wait()
 }
 
