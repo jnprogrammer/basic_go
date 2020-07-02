@@ -50,4 +50,5 @@ func main() {
 		fmt.Println("\n Rocks: ", i)
 		fmt.Println(v.Kind, v.Power)
 	}
+
 }
