@@ -11,6 +11,8 @@ func main() {
 	fmt.Println("GOROUTINES:", runtime.NumGoroutine())
 
 	var waitgroups sync.WaitGroup
+	var mu sync.Mutex //Added a mutext to lock gorutines
+
 	counter := 0
 
 	const gos = 100
@@ -18,11 +20,13 @@ func main() {
 
 	for i := 0; i < gos; i++ {
 		go func() {
+			mu.Lock()
 			v := counter
 			//time.Sleep(time.Second)
 			runtime.Gosched()
 			v++
 			counter = v
+			mu.Unlock()
 			waitgroups.Done()
 		}()
 		fmt.Println("Goroutines: ", runtime.NumGoroutine())
@@ -35,4 +39,4 @@ func main() {
 	fmt.Println("Hello, concurrent Go !")
 }
 
-//This code is an example of the issue called Race Condition, you don't want these.
+//Mutex can lock down coad to fix race conditions
