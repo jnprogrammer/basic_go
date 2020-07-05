@@ -12,19 +12,20 @@ type humans interface {
 }
 
 func main() {
-	per =: persons{
-		name: "Tom",
-		powerlevel: 420
+	per := persons{
+		name:       "Tom",
+		powerlevel: 420,
 	}
 
 	per.speak()
+	turnup(&per)
 }
 
-func (h persons) turnup() {
-	fmt.Println("HEY I SAID MY NAME IS ")
+func turnup(h humans) {
+	fmt.Println("HEY I SAID ")
 	h.speak()
 }
 
-func (p *persons) speak(){
+func (p *persons) speak() {
 	fmt.Println("I'm ", p.name)
 }
