@@ -4,23 +4,20 @@ import (
 	"fmt"
 	"runtime"
 	"sync"
+	"sync/atomic"
 )
 
 func main() {
 
-	var mu sync.Mutex
 	var wg sync.WaitGroup
-	var counter int
+	var counter int64
 	const goes = 100
 
 	wg.Add(goes)
 	for i := 0; i < goes; i++ {
 		go func() {
-			mu.Lock()
-			v := counter
-			v++
-			counter = v
-			mu.Unlock()
+			atomic.AddInt64(&counter, 1)
+			fmt.Println(atomic.LoadInt64(&counter))
 			wg.Done()
 
 		}()
