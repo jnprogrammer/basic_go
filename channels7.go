@@ -48,3 +48,4 @@ func send2(e, o chan<- int, q chan<- bool) {
 }
 
 //Remember, Channels Block
+//comma okay idiom can be used to check if a channel is closed
