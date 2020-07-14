@@ -10,7 +10,7 @@ func main() {
 	if err != nil {
 		fmt.Println("err happened", err)
 		//fmt.Println("err happened !?!", err)
-		//log.Fatalln(err)
+		//log.Fatalln(err) // calls println then calls os.Exit(1)
 		//panic(err)
 	}
 }
