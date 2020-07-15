@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
 	"testing"
-
 )
 
 type testpair struct {
