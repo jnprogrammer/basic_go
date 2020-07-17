@@ -1,4 +1,4 @@
-package acdc
+package coolpack
 
 func Sum(x ...int) int {
 	s := 0
