@@ -22,3 +22,6 @@ func BenchmarkMark(b *testing.B) {
 		Mark("Demo")
 	}
 }
+
+//go tool cover -html c.out
+// run that command for a cool web page
