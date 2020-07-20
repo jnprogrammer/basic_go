@@ -5,6 +5,17 @@ func main() {
 }
 
 /*
+Remember to BET . . .not the channel NEVER THAT CHANNEL
+- Benchmark
+- Example
+- Test
+
+
+BenchMarkCat(b *testing.B)
+ExampleCat()
+TestCat(t *testiing.T)
+
+
 # Commands to run for testing
 
 go test
