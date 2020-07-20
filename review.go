@@ -5,7 +5,7 @@ func main() {
 }
 
 /*
-Remember to BET . . .not the channel NEVER THAT CHANNEL
+Remember to BET  . . .
 - Benchmark
 - Example
 - Test
@@ -17,6 +17,8 @@ TestCat(t *testiing.T)
 
 
 # Commands to run for testing
+
+godoc -http=:8080
 
 go test
 go test -bench
