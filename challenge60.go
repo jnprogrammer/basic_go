@@ -1,24 +1,19 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 
 	c := make(chan int)
 
-	for j := 0; j < 10; j++ {
-		go func() {
-			for i := 0; i < 10; i++ {
-				c <- i
-				fmt.Println("WHOA") // I wonder why this happens when it runs?
-			}
-		}()
-	}
+	go func() {
+		for i := 0; i < 101; i++ {
+			c <- i
+		}
+		close(c)
+	}()
 
-	for v := 0; v < 100; v++ {
-		fmt.Println(v, <-c)
+	for v := range c {
+		fmt.Println(v)
 	}
-
 }
