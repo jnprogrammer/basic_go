@@ -1,15 +1,12 @@
 package main
 
-import (
-	"fmt"
-)
-
 var (
-	name string
-	course
-
+	name   string
+	course string
+	module int
+	clip   int
 )
 
-func main(){
+func main() {
 
 }
