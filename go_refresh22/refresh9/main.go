@@ -8,7 +8,6 @@ func main() {
 	bestFinish := champFinishes(1, 12, 5, 6, 4, 3, 3)
 
 	fmt.Println(bestFinish)
-
 }
 
 func champFinishes(finishes ...int) int {
