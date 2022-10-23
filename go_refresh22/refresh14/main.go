@@ -2,15 +2,26 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 func main() {
-	for timer := 10; timer >= 0; timer-- {
-		fmt.Println(timer)
-		if timer == 0 {
-			fmt.Println("Boom!")
+
+	listfood := []string{
+		"cookies",
+		"bread",
+		"corn",
+		"beets"}
+
+	shoppinglist := []string{
+		"cookies",
+		"beets"}
+
+	for _, i := range listfood {
+		fmt.Println(i)
+		for _, j := range shoppinglist {
+			if i == j {
+				fmt.Println("We found what's on the list")
+			}
 		}
-		time.Sleep(1 * time.Second)
 	}
 }
