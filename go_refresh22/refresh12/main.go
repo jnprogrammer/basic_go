@@ -11,13 +11,14 @@ func main() {
 	case "kube":
 		fmt.Println("How did you get me?")
 	case "KUbe":
-		fmt.Println("How did you get me?")
+		fmt.Println("How did you get me?w2")
 	case "kuBE":
 		fmt.Println("How did you get me?")
 	case "KubE":
 		fmt.Println("How did you get me?")
 	case "Kube":
 		fmt.Println("we match")
+		fallthrough
 	case "kubE":
 		fmt.Println("How did you get me?")
 	default:
