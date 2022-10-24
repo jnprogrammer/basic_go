@@ -11,5 +11,7 @@ func main() {
 	fmt.Printf("Length of slice is %d and capacity is %d\n",
 		len(course), cap(course))
 
-	fmt.Println(course)
+	for _, i := range course {
+		fmt.Println(i)
+	}
 }
