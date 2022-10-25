@@ -18,7 +18,12 @@ func main() {
 		"I": 9,
 	}
 
-	for mapKey, mapVal := range testMap {
-		fmt.Printf("Key is: %v Value is: %v\n", mapKey, mapVal)
-	}
+	fmt.Println(testMap["E"])
+	testMap["E"] = 420
+	fmt.Println(testMap["E"])
+	testMap["J"] = 420902000
+	fmt.Println(testMap)
+	delete(testMap, "G")
+	fmt.Println(testMap)
+
 }
